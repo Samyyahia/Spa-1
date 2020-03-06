@@ -1,0 +1,21 @@
+.btn {
+  padding: 15px 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: $poppins-Bold;
+  color: $white;
+  background-color: $brown;
+  border: 1px solid $brown;
+  @include transition(all $easeOutQuad .3s);
+
+  &:hover {
+    background-color: $brownLight;
+    color: $white;
+  }
+
+  &__white {
+    color: $brown;
+    background-color: $white;
+    border: 1px solid $white;
+  }
+}

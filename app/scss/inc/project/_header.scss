@@ -1,0 +1,78 @@
+.header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999;
+  background-color: $white;
+
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30px;
+    @include transform(translate(-50%, -50%))
+  }
+
+  .burger {
+    margin-left: 100px;
+    width: 60px;
+    position: relative;
+    height: 26px;
+
+    &:hover {
+      .burger__figure {
+        left: 5px;
+      }
+    }
+
+    &__figure {
+      width: 50px;
+      position: absolute;
+      height: 2px;
+      background-color: $brown;
+      @include transition(all $easeOutQuad .3s);
+
+      &.first {
+        top: 0;
+        left: 0;
+      }
+
+      &.second {
+        top: 50%;
+        left: 10px;
+        @include transform(translateY(-50%))
+      }
+
+      &.third {
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-user {
+      width: 100px;
+      height: 100px;
+      background-color: $brown;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      text-decoration: none;
+      font-size: 30px;
+      margin-left: 50px;
+      @include transition(all $easeOutQuad .3s);
+
+      &:hover {
+        background-color: $brownLight;
+      }
+    }
+  }
+}

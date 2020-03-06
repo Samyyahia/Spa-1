@@ -1,0 +1,41 @@
+@include font-face(PoppinsBlack, '../fonts/poppins/Poppins-Black', 'normal', 'normal', ttf);
+@include font-face(PoppinsBlackItalic, '../fonts/poppins/Poppins-BlackItalic', 'normal', 'normal', ttf);
+@include font-face(PoppinsBold, '../fonts/poppins/Poppins-Bold', 'normal', 'normal', ttf);
+@include font-face(PoppinsBoldItalic, '../fonts/poppins/Poppins-BoldItalic', 'normal', 'normal', ttf);
+@include font-face(PoppinsExtraBold, '../fonts/poppins/Poppins-ExtraBold', 'normal', 'normal', ttf);
+@include font-face(PoppinsExtraBoldItalic, '../fonts/poppins/Poppins-ExtraBoldItalic', 'normal', 'normal', ttf);
+@include font-face(PoppinsExtraLight, '../fonts/poppins/Poppins-ExtraLight', 'normal', 'normal', ttf);
+@include font-face(PoppinsExtraLightItalic, '../fonts/poppins/Poppins-ExtraLightItalic', 'normal', 'normal', ttf);
+@include font-face(PoppinsItalic, '../fonts/poppins/Poppins-Italic', 'normal', 'normal', ttf);
+@include font-face(PoppinsLight, '../fonts/poppins/Poppins-Light', 'normal', 'normal', ttf);
+@include font-face(PoppinsLightItalic, '../fonts/poppins/Poppins-LightItalic', 'normal', 'normal', ttf);
+@include font-face(PoppinsMedium, '../fonts/poppins/Poppins-Medium', 'normal', 'normal', ttf);
+@include font-face(PoppinsMediumItalic, '../fonts/poppins/Poppins-MediumItalic', 'normal', 'normal', ttf);
+@include font-face(PoppinsRegular, '../fonts/poppins/Poppins-Regular', 'normal', 'normal', ttf);
+@include font-face(PoppinsSemiBold, '../fonts/poppins/Poppins-SemiBold', 'normal', 'normal', ttf);
+@include font-face(PoppinsSemiBoldItalic, '../fonts/poppins/Poppins-SemiBoldItalic', 'normal', 'normal', ttf);
+@include font-face(PoppinsThin, '../fonts/poppins/Poppins-Thin', 'normal', 'normal', ttf);
+@include font-face(PoppinsThinItalic, '../fonts/poppins/Poppins-ThinItalic', 'normal', 'normal', ttf);
+
+@include font-face(Icons, '../fonts/icons/icomoon', 'normal', 'normal', ttf woff svg eot);
+
+$poppins-Black: "PoppinsBlack";
+$poppins-BlackItalic: "PoppinsBlackItalic";
+$poppins-Bold: "PoppinsBold";
+$poppins-BoldItalic: "PoppinsBoldItalic";
+$poppins-ExtraBold: "PoppinsExtraBold";
+$poppins-ExtraBoldItalic: "PoppinsExtraBoldItalic";
+$poppins-ExtraLight: "PoppinsExtraLight";
+$poppins-ExtraLightItalic: "PoppinsExtraLightItalic";
+$poppins-Italic: "PoppinsItalic";
+$poppins-Light: "PoppinsLight";
+$poppins-LightItalic: "PoppinsLightItalic";
+$poppins-Medium: "PoppinsMedium";
+$poppins-MediumItalic: "PoppinsMediumItalic";
+$poppins: "PoppinsRegular";
+$poppins-SemiBold: "PoppinsSemiBold";
+$poppins-SemiBoldItalic: "PoppinsSemiBoldItalic";
+$poppins-Thin: "PoppinsThin";
+$poppins-ThinItalic: "PoppinsThinItalic";
+
+$icons: "Icons";

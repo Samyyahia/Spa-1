@@ -1,0 +1,33 @@
+.service {
+  margin: 150px auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__title {
+    font-size: 50px;
+    color: $brown;
+    font-family: $poppins-ExtraLight;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  &__text {
+    color: $brown;
+    font-size: 29px;
+    text-align: center;
+    font-family: $poppins-ExtraLightItalic;
+    line-height: 1.5;
+  }
+
+  &__legend {
+    margin-top: 30px;
+    color: $brown;
+    font-size: 13px;
+    text-align: center;
+    font-family: $poppins-ExtraLightItalic;
+    line-height: 1.5;
+  }
+}
