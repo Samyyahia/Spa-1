@@ -30,6 +30,95 @@
 <main>
   <div class="banner" style="background-image: url('https://images.unsplash.com/photo-1541590893527-5e6ab3a2745c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80')">
   </div>
+
+
+
+  <div class="offers">
+    <div class="offers__wrapper">
+      <h2 class="offers__wrapper-title">
+        Nos Offres
+      </h2>
+    </div>
+    <div class="cards" id="slider">
+
+      <div class="card" style="background-image: url('https://images.unsplash.com/photo-1541590893527-5e6ab3a2745c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80')">
+        <div class="card__top">
+          <a href="#" class="card__top-book">
+            <i class="icon-booking"></i>
+          </a>
+          <a href="#" class="card__top-heart">
+            <i class="icon-heart"></i>
+          </a>
+        </div>
+        <div class="card__bottom">
+          <h3 class="card__bottom-title">
+            Salama
+          </h3>
+          <div class="card__bottom-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad amet animi architecto culpa delectus doloribus dolorum eveniet facilis libero maxime nulla perspiciatis praesentium quas reiciendis saepe, temporibus ut voluptate.
+            </p>
+          </div>
+          <a href="#" class="card__bottom-more">
+            En savoir plus
+          </a>
+        </div>
+      </div>
+
+      <div class="card" style="background-image: url('https://images.unsplash.com/photo-1541590893527-5e6ab3a2745c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80')">
+        <div class="card__top">
+          <a href="#" class="card__top-book">
+            <i class="icon-booking"></i>
+          </a>
+          <a href="#" class="card__top-heart">
+            <i class="icon-heart"></i>
+          </a>
+        </div>
+        <div class="card__bottom">
+          <h3 class="card__bottom-title">
+            Salama
+          </h3>
+          <div class="card__bottom-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad amet animi architecto culpa delectus doloribus dolorum eveniet facilis libero maxime nulla perspiciatis praesentium quas reiciendis saepe, temporibus ut voluptate.
+            </p>
+          </div>
+          <a href="#" class="card__bottom-more">
+            En savoir plus
+          </a>
+        </div>
+      </div>
+
+
+
+      <div class="card" style="background-image: url('https://images.unsplash.com/photo-1541590893527-5e6ab3a2745c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80')">
+        <div class="card__top">
+          <a href="#" class="card__top-book">
+            <i class="icon-booking"></i>
+          </a>
+          <a href="#" class="card__top-heart">
+            <i class="icon-heart"></i>
+          </a>
+        </div>
+        <div class="card__bottom">
+          <h3 class="card__bottom-title">
+            Salama
+          </h3>
+          <div class="card__bottom-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad amet animi architecto culpa delectus doloribus dolorum eveniet facilis libero maxime nulla perspiciatis praesentium quas reiciendis saepe, temporibus ut voluptate.
+            </p>
+          </div>
+          <a href="#" class="card__bottom-more">
+            En savoir plus
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
   <div class="block">
     <div class="block__content">
       <h2 class="block__content-title">Le domaine</h2>
@@ -102,8 +191,20 @@
     <span class="footer__content-legals">Mention légales / CGU / CGV</span>
     <span class="footer__content-rights">Tout droit réservé au Domaine de La Pommeraye</span>
   </div>
-  <div class="footer__map"></div>
+  <div class="footer__map" id="map"></div>
 </footer>
 <script src="./js/app.min.js" charset="utf-8"></script>
+<script>
+    function initMap() {
+        // The location of Uluru
+        var uluru = {lat: 48.9051814, lng: -0.4139194};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 15, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcQUPN2pw36aiOaPibEjQ8f1K10tRjYLU&callback=initMap"></script>
 </body>
 </html>

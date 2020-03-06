@@ -1,0 +1,92 @@
+.offers {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 150px;
+
+  &__wrapper {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 45px 0;
+
+    &-title {
+      color: $brown;
+      font-size: 50px;
+      font-family: $poppins-ExtraLight;
+    }
+  }
+
+  .cards {
+    width: 100%;
+    height: 400px;
+
+    .slick-slide {
+      max-width: 540px;
+      width: 540px;
+      margin: 0 30px;
+    }
+
+    .card {
+      position: relative;
+      max-width: 540px;
+      width: 540px;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      &__top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 32px 30px;
+
+        &-book,
+        &-heart {
+          margin: 0 15px;
+          font-size: 25px;
+          text-decoration: none;
+          color: $white;
+        }
+      }
+
+      &__bottom {
+        position: absolute;
+        bottom: 0;
+        padding: 30px 25px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: rgba($black, .5);
+
+        &-title {
+          color: $white;
+          font-size: 25px;
+          font-family: $poppins-ExtraBold;
+          margin-bottom: 5px;
+        }
+
+        &-text {
+          color: $white;
+          font-size: 16px;
+          font-family: $poppins;
+          margin-bottom: 5px;
+        }
+
+        &-more {
+          color: $brown;
+          font-family: $poppins;
+        }
+      }
+    }
+  }
+}
